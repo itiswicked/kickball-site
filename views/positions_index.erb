@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Positions</title>
+    <link href="/styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <a href="/"> <-- Back to Home </a>
+    <h1>Positions</h1>
+    <ul>
+      <% positions.each do |position| %>
+        <li><a href="/positions/<%= position %>"><%= position %></a></li>
+      <% end %>
+    </ul>
+
+  </body>
+
+</html>

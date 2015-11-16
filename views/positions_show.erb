@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= position_name %></title>
+    <link href="/styles.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <a href="/positions"> <-- Back to positions </a>
+    <h1><%= position_name %></h1>
+    <ul>
+      <% teams_and_players.each do |team_player| %>
+        <li><%= team_player[:name] %>: <%= team_player[:team] %></li>
+      <% end %>
+    </ul>
+
+  </body>
+
+</html>
